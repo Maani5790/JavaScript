@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>mouse event</title>
+</head>
+<style>
+    body{
+        background-color: crimson;
+    }
+    .container{
+        height: 100px;
+        width: 100px;
+        background: blue;
+    
+    }
+    
+</style>
+<body>
+    <div  id="box" class="container">
+
+    </div>
+    <script>
+        const box = document.getElementById("box");
+        box.addEventListener("mouseenter" , () =>{
+            box.style.backgroundColor = "black";
+            console.log("dude")
+        } );
+
+        box.addEventListener("mouseleave" , () =>{
+            box.style.backgroundColor = "yellow";
+            console.log("babes");
+        } )
+    </script>
+</body>
+</html>

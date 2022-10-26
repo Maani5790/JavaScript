@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>event object</title>
+  </head>
+  <style>
+    body {
+      background-color: coral;
+    }
+    .btn{
+        margin-top: auto;
+        text-align: center;
+        color: black;
+    }
+  </style>
+  <body>
+    <h2>Hello World</h2>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis, odit.
+    </p>
+    <button class="btn" id="bts" onclick="clickMe()">Submit</button>
+    <script>
+         
+    
+     const button = document.getElementById("bts");
+      
+     const clickMe = () =>{
+        alert("hey developer");
+        console.log(event);
+        console.log(event.target);
+        console.log(event.type);
+     }
+
+     button.addEventListener("click" , showData);
+
+
+
+
+    </script>
+  </body>
+</html>
